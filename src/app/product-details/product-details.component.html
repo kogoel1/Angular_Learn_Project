@@ -1,0 +1,8 @@
+<p>product-details works!</p>
+<div *ngIf="productToShow">
+  <h2>{{ productToShow.name }}</h2>
+  <h4>{{ productToShow.price | currency }}</h4>
+  <p>{{ productToShow.description }}</p>
+
+  <button (click)="buy(productToShow)">Buy Me</button>
+</div>
